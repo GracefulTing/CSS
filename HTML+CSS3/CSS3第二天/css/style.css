@@ -1,0 +1,177 @@
+/* 标签样式初始化 */
+body,html{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-size:14px;
+	font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'
+}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+img{
+	border:0;
+}
+ul,li{
+	list-style-type:none;
+}
+a{
+	color:#00007F;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+.top{
+	padding-top:25px;
+	padding-bottom: 35px;
+}
+.cool{
+	min-height:10px;
+	width:960px;
+	/*width:70%;*/
+	/*border:1px solid red;*/
+	margin:0 auto;
+}
+.cool-3{
+	width:25%;
+	float:left;
+	display: inline-block;
+	/*border:1px solid;*/
+}
+.logo{
+	width:70%;
+	font-size:20px;
+	color:rgb(241,78,66);
+	display:inline;
+}
+.websidelink{
+	font-size:12px;
+	color:#999;
+	vertical-align:top;
+}
+.cool-9{
+	/*width:75%;*/
+	float:right;
+	/*text-align: right;*/
+	/*border:1px solid;*/
+}
+.nav{
+	color:#999;
+	margin-left:40px;
+}
+.nav:hover{
+	color:rgb(107,197,210);
+}
+.banner{
+	background-color: rgb(107,197,210);
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.typegraphic{
+	font-size:400px;
+	color:white;
+	letter-spacing: -20px;
+	float:left;
+	margin-top:-182px;
+	margin-left:-400px;
+	padding-right: 40px;
+}
+.slogn{
+	font-size:36px;
+	color:#fff;
+}
+.introduction{
+	color:#177c8a;
+	margin-top: 20px;
+}
+.call{
+	font-size:18px;
+	border:1px solid white;
+	color:white;
+	border-radius:5px;
+	padding:10px 20px;
+	display: inline-block;
+	margin-top: 30px;
+}
+.call:hover{
+	background-color:rgba(255,255,255,0.2);
+}
+.poemtitle{
+	margin-top:30px;
+	color:#f14e42;
+	font-size:24px;
+	margin-bottom:30px;
+}
+.poemcontent{
+	color:#6f6f70;
+	line-height:25px;
+	display:inline-block;
+	text-align:left;
+}
+.contentblock{
+	width:70%;
+	text-align:center;
+	padding-top:60px;
+	padding-bottom:60px;
+	border-bottom:1px solid #e5e5e5;
+}
+.photo{
+	float:left;
+	margin-top:-50px;
+	padding-right:60px;
+	margin-left:60px;
+}
+.visiontitle{
+	color:#f14e42;
+	font-size:24px;
+	padding-bottom: 30px;
+	/*text-align:left;*/
+}
+.visioncontent{
+	color:#6f6f70;
+	line-height:25px;
+	text-align:left;
+	padding-bottom:70px;
+}
+.contacttitle{
+	color:#6f6f70;
+	font-size:25px;
+	padding-bottom:30px;
+}
+.email{
+	font-size:18px;
+	background-color:rgb(107,197,210);
+	color:white;
+	padding:10px 20px; 
+	border-radius:5px;
+}
+.email:hover{
+	background-color:#73e4d2;
+}
+.footer{
+	width:70%;
+	padding:30px 0;
+	text-align: center;
+	background-color: #f3f3f3;
+	color:#e3e3e3;
+}
+@media  (max-width:1200px) and (min-width:400px) {
+	.typegraphic{
+		display: none;
+	}
+	.cool{
+		width:400px;
+		text-align: center;
+	}
+	.photo,.websidelink{
+		display: none;
+	}
+	.top,.contentblock,.visiontitle,.visioncontent{
+		text-align:center;
+	}
+	.cool-3,.cool-9{
+		float:none;
+	}
+}

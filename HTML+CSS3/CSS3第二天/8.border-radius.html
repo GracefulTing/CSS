@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width:200px;
+				height:200px;
+				background: yellowgreen;
+				margin: 30px auto;
+			}
+			div:nth-child(1){
+				border-radius: 20px;
+			}
+			div:nth-child(2){
+				border-radius: 50%;
+			}
+			div:nth-child(3){
+				border-top-left-radius:190px;
+				border-bottom-right-radius: 190px;
+			}
+			div:nth-child(4){
+				border-bottom-left-radius:100px;
+				border-bottom-right-radius:100px;
+				border-top-left-radius:100px;
+			}
+			div:nth-child(5){
+				width:100px;
+				border-radius: 50%;
+			}
+			div:nth-child(6){
+				/*border-bottom-right-radius:190px;*/
+				width:0;
+				height:0;
+				background: white;
+				border:100px solid blueviolet;
+				border-radius: 100px;
+				border-left: 100px solid transparent;
+				border-right:100px solid transparent;
+				border-top:100px solid transparent;
+				border-bottom:100px solid yellowgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

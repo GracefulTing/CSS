@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:200px;
+				height:200px;
+				background: red;
+				position: relative;
+				animation:move 5s infinite;
+			}
+			/*@keyframes move{
+				from{top:0;left:0;}
+				to{top:0;left:500px;}
+			}*/
+			@keyframes move{
+				0%{
+					top:0;left:0;
+				}
+				50%{
+					top:0;left:500px;
+				}
+				100%{
+					top:500px;left:500px;
+				}
+			}
+			@keyframes move{
+				0%{
+					top:0;left:0;
+				}
+				25%{
+					top:0;left:500px;
+				}
+				50%{
+					top:500px;left:500px;
+				}
+				75%{
+					top:500px;left:0px;
+				}
+				100%{
+					top:0;left:0;
+				}
+			}
+			/*@keyframes:关键帧;
+			  move:动画名称;
+			  from:开始值(0%);
+			  to:结束值(100%);
+			*/
+			
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

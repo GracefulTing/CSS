@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*.content{
+				width:100%;
+				background:yellow;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.content img{
+				width:100%;
+				height:100%;
+			}
+			.con1{
+				width:32%;
+				height:100%;
+				display: inline-block;
+			}
+			.con2{
+				width:32%;
+				height:100%;
+				display: inline-block;
+			}
+			.con3{
+				width:32%;
+				height:100%;
+				display: inline-block;
+			}*/
+		.content{
+			width:100%;
+			margin:20px auto;
+			text-align: center;
+		}
+		.con1{
+			width:30%;
+			height:100%;
+			min-width:250px;
+			border:1px solid lightgrey;
+			display: inline-block;
+			position: relative;
+			border-radius: 10px;
+		}
+		.con2{
+			width:30%;
+			height:100%;
+			min-width:250px;
+			border:1px solid lightgrey;
+			display: inline-block;
+			position: relative;
+			border-radius: 10px;
+		}
+		.con3{
+			width:30%;
+			height:100%;
+			min-width:250px;
+			border:1px solid lightgrey;
+			display: inline-block;
+			position: relative;
+			border-radius: 10px;
+		}
+		.con1 img,.con2 img,.con3 img{
+			width:100%;
+			height:100%;
+			border-top-left-radius: 10px;
+			border-top-right-radius:10px;
+			/*border:1px solid;*/
+		}
+		.kuang{
+			width:100%;
+			/*border:1px solid lightgrey;*/
+			border-radius: 5px;
+			text-align:center;
+			position:relative;
+			top:0;
+			left:0;
+		}
+		.fu{
+			background: rgb(0,0,0);
+			opacity:0;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:99%;
+			color:white;
+			text-align:center;
+			border-top-left-radius: 10px;
+			border-top-right-radius:10px; 
+			
+		}
+		.fu:hover{
+			opacity:0.5;
+		}
+		.big{
+			font-size:22px;
+			margin-top:20%;
+			text-align: center;
+		}
+		.small{
+			text-align: center;
+			font-size:12px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="con1">
+				<div class="kuang">
+					<img src="img/a.jpg" alt="" width="372px" height="206px">
+					<div class="fu">
+						<p class="big">豆瓣</p>
+						<p class="small">在豆瓣,兴趣让用户与品牌不期而遇</p>
+					</div>
+				</div>
+				<p>在豆瓣,兴趣让用户与品牌不期而遇</p>	
+			</div>
+			<div class="con2">
+				<div class="kuang">
+					<img src="img/b.jpg" alt="" width="372px" height="206px">
+					<div class="fu">
+						<p class="big">华为</p>
+						<p class="small">华为发布会《改变未来的开始》</p>
+					</div>
+				</div>
+				<p>华为发布会《改变未来的开始》</p>
+			</div>
+			<div class="con3">
+				<div class="kuang">
+					<img src="img/c.jpg" alt="" width="372px" height="206px">
+					<div class="fu">
+						<p class="big">聚合数据</p>
+						<p class="small">聚合数据-种类篇片头广告</p>
+					</div>	
+				</div>
+				<p>聚合数据-种类篇片头广告</p>
+			</div>
+		</div>
+	</body>
+</html>

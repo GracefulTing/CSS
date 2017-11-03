@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				width:300px;
+				height:300px;
+			}
+			.cube{
+				transform-style: preserve-3d;
+				animation: move 60s infinite;
+			}
+			@keyframes move{
+				50%{
+					transform: rotateX(1600deg) rotateY(3600deg);
+				}
+			}
+			.a{
+				transform: translateX(600px) translateZ(-150px);
+				position:relative;
+				top:0px;
+				left:15px;
+				margin-top:200px;
+			}
+			.b{
+				transform:rotateY(90deg) translateZ(159px);
+				/*transform-origin: left;*/
+				position:relative;
+				left:0px;
+				top:0px;
+				
+			}
+			.c{
+				transform: translateZ(150px);
+			}
+			.d{
+				transform:rotateY(90deg) translateZ(-153px);
+				/*transform-origin: right;*/
+				/*left:300px;
+				top:-50px;*/
+			}
+			.e{
+				transform:rotateX(90deg) translateZ(20px);
+				position:relative;
+				left:-610px;
+				top:170px;
+			}
+			.f{
+				transform:rotateX(90deg) ;
+				position:relative;
+				left:-915px;
+				top:-150px;
+			}
+		</style>
+		
+	</head>
+	<body bgcolor="black">
+		<div class="cube">
+			<img src="img/1.jpg" class="a"/>
+			<img src="img/2.jpg" class="b"/>
+			<img src="img/3.jpg" class="c"/>
+			<img src="img/4.jpg" class="d"/>
+			<img src="img/5.jpg" class="e"/>
+			<img src="img/6.jpg" class="f"/>
+		</div>
+	</body>
+</html>
+

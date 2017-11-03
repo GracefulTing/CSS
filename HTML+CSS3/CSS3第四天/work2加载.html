@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.k{
+				width:400px;
+				height:200px;
+				border:1px solid;
+			}
+			li{
+				width:20px;
+				height:20px;
+				background: lightgrey;
+				border-radius:50%;
+				list-style: none;
+				animation:move 1s infinite;
+				margin-top: 3px;
+			}
+			li:nth-child(1){
+				position:absolute;
+				top:19px;
+				left:150px;
+				animation-delay:0.125s;
+			}
+			li:nth-child(2){
+				position:absolute;
+				top:30px;
+				left:178px;
+				animation-delay:0.25s;
+			}
+			li:nth-child(3){
+				position:absolute;
+				top:55px;
+				left:193px;
+				animation-delay:0.375s;
+			}
+			li:nth-child(4){
+				position:absolute;
+				top:80px;
+				left:178px;
+				animation-delay:0.5s;
+			}
+			li:nth-child(5){
+				position:absolute;
+				top:96px;
+				left:150px;
+				animation-delay:0.625s;
+			}
+			li:nth-child(6){
+				position:absolute;
+				top:82px;
+				left:122px;
+				animation-delay:0.75s;
+			}
+			li:nth-child(7){
+				position:absolute;
+				top:57px;
+				left:106px;
+				animation-delay:0.825s;
+			}
+			li:nth-child(8){
+				position:absolute;
+				top:31px;
+				left:121px;
+				animation-delay:1.0s;
+			}
+			@keyframes move{
+				0%{transform: scale(1);}
+				50%{transform: scale(0.6);}
+				100%{transform: scale(0.2);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="k">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</div>
+	</body>
+</html>

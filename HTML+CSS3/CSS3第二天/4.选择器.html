@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*紧邻选择器*/
+			div+p{
+				color:red;
+			}
+			/*属性选择器*/
+			a[target=_blank]{
+				background: red;;
+			}
+			a[target=_self]{
+				background:yellow;
+			}
+			p[name]{
+				background:blueviolet;
+			}
+			/*伪类选择器*/
+			h3:before{
+				content:url(img/shitang.jpg);
+			}
+			h3:after{
+				content:url(img/shitang.jpg);
+				background: red;
+			}
+			/*
+			 * 同一父级下的相同标签
+			 * 偶数:nth-child(2n)
+			 * 奇数:nth-child(2n-1)
+			 */
+			.div1 p:nth-child(2){
+				color:pink;
+			}
+			input:disabled{
+				height:100px;
+			}
+			/*通过标签状态*/
+			input:enabled{
+				background: yellow;
+			}
+		</style> 
+	</head>
+	<body>
+		<p>this is p1.</p>
+		<div>this is div.</div>
+		<p name="p">this is p1.</p>
+		<span>this is span.</span>
+		<p>this is p2.</p>
+		<!--target:打开方式
+			_blank:新建窗口
+			_self:在原页面打开
+		-->
+		<a href="http://www.baidu.com" target="_blank">baidu</a>
+		<a href="http://www.baidu.com" target="_self">baidu</a>
+		
+		<h3>我是一个块标签</h3>
+		<div class="div1">
+			<p>This is p1</p>
+			<p>This is p2</p>
+			<p>This is p3</p>
+			<p>This is p4</p>
+			<p>This is p5</p>
+		</div>
+		
+		
+		<input type="text" />
+		<!--disabled禁用-->
+		<input type="text" disabled="disabled" />
+	</body>
+</html>

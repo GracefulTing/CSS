@@ -1,0 +1,71 @@
+<!--div:太阳 相对定位
+	   div:地球 绝对定位
+	      div:月球 绝对定位    
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.sun{
+				position:fixed;
+				left:400px;
+				top:300px;
+			}
+			.e{
+				position: absolute;
+				top:50px;
+				left:50px;
+			}
+			.m{
+				position: absolute;
+				top:50px;
+				left:-20px;
+				animation: move1 2s infinite;
+			}
+			.together{
+				width:160px;
+				height:160px;
+				/*border:1px solid red;*/
+				position: relative;
+				top:100px;
+				left:200px;
+				animation: move2 10s infinite;
+			}
+			@keyframes move1{
+				0%{top:50px;left:-20px;}
+				10%{top:0px;left:30px;}
+				20%{top:6px;left:50px;}
+				30%{top:20px;left:150px;}
+				40%{top:130px;left:110px;}
+				50%{top:165px;left:80px;}
+				60%{top:130px;left:20px;}
+				70%{top:100px;left:10px;}
+				80%{top:85px;left:0px;}
+				90%{top:60px;left:-10px;}
+				100%{top:50px;left:-20px;}
+			}
+			@keyframes move2{
+				0%{top:100px;left:200px;}
+				10%{top:90px;left:300px;}
+				20%{top:130px;left:400px;}
+				30%{top:200px;left:600px;}
+				40%{top:280px;left:700px;}
+				50%{top:480px;left:600px;}
+				60%{top:600px;left:260px;}
+				70%{top:420px;left:220px;}
+				80%{top:340px;left:160px;}
+				90%{top:220px;left:210px;}
+				100%{top:100px;left:200px;}
+			}
+		</style>
+	</head>
+	<body bgcolor="black">
+		<img src="img/sun.gif" class="sun" width="220px"/>
+		<div class="together">
+			<img src="img/earth.png" width="80px" class="e"/>
+			<img src="img/moon.png" width="40px" class="m"/>
+		</div>
+	</body>
+</html>

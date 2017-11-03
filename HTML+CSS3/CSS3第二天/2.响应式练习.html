@@ -1,0 +1,159 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1{
+				width:1200px;
+				height:30px;
+				background:red;
+			}
+			.div2{
+				display: inline-block;
+				width:80px;
+				height:200px;
+				background:yellow;
+			}
+			.div3{
+				display: inline-block;
+				width:1025px;
+				height:200px;
+				background:blue;
+			}
+			.div4{
+				display: inline-block;
+				width:80px;
+				height:200px;
+				background:pink;
+			}
+			.c{
+				margin-top:30px;;
+			}
+			.div5{
+				width:1200px;
+				height:30px;
+				margin-top:30px;
+				background: paleturquoise;
+			}
+			@media (max-width:1200px) and (min-width:1000px ) {
+				.div1,.div5{
+					width:1000px;
+					height:30px;
+					background:greenyellow;
+				}
+				.div2{
+					width:100px;
+					height:200px;
+					background:greenyellow;
+				}
+				.div4{
+					width:100px;
+					height:200px;
+					background:greenyellow;
+					display: none;
+				}
+				.div3{
+					width:895px;
+					height:200px;
+					background:greenyellow;
+				}
+			}
+			@media (max-width:1000px) and (min-width:800px ) {
+				.div2,.div4{
+					display: none;
+				}
+				.div1,.div5{
+					width:800px;
+					height:30px;
+					background:pink;
+				}
+				.div3{
+					width:800px;
+					height:200px;
+					background: pink;
+				}
+			}
+			@media (max-width:800px) and (min-width:600px ) {
+				.div1,.div2,.div3,.div4,.div5{
+					width:600px;
+					height:30px;
+					background:yellow;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="c">
+			<div class="div2"></div>
+			<div class="div3"></div>
+			<div class="div4"></div>
+		</div>
+		<div class="div5"></div>
+	</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.div1,.div5{
+			width:1000px;
+			height:100px;
+			background: pink;
+		}
+		.div2,.div3,.div4{
+			height:500px;
+			display: inline-block;
+		}
+		.div2,.div4{
+			width:200px;
+			background: yellow;
+		}
+		.div3{
+			width:500px;
+			background: greenyellow;
+		}
+		.div2{
+			margin-right: 50px;
+		}
+		.div4{
+			margin-left: 50px;
+		}
+		@media only screen and (max-width:1000px ) {
+			.div4{
+				display: none;
+			}
+			.div1,.div5{
+				width:750px;
+			}
+		}
+		@media only screen and (max-width:800px ) {
+			.div2{
+				display: none;
+			}
+			.div1,.div3,.div5{
+				width:600px;
+				display: inline-block;
+			}
+		}
+		@media only screen and (max-width:600px ) {
+			.div1,.div3,.div5,.div2,.div4{
+				display: block;
+				width:400px;
+				height:120px;
+				margin-left:0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div><div class="div2"></div><div class="div3"></div><div class="div4"></div><div class="div5"></div>
+</body>
+</html>

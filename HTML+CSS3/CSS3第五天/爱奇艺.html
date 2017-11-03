@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+			form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			img{border:0;}
+			ul,li{list-style-type:none;}
+			a{color:#00007F;text-decoration:none;}
+			a:hover{text-decoration:none;}
+			.head,.nav{
+				width:96%;
+				height:55px;
+				background:#292929;
+			}
+			.head_l{
+				width:800px;
+				height:60px;
+				/*border:1px solid red;*/
+				float:left;
+			}
+			.red{
+				width:12px;
+				height:12px;
+				border-radius:50%;
+				background: rgb(252,70,71);
+				display: inline-block;
+			}
+			.yellow{
+				width:12px;
+				height:12px;
+				border-radius:50%;
+				background: rgb(254,177,36);
+				display: inline-block;
+				margin-left:8px;
+			}
+			.green{
+				width:12px;
+				height:12px;
+				border-radius:50%;
+				display: inline-block;
+				background: rgb(41,197,50);
+				margin-left:8px;
+			}
+			.l1{
+				margin:8px 12px;
+			}
+			.l2{
+				width:80px;
+				height:60px;
+				/*border:1px solid red;*/
+				margin-left:80px;
+				margin-top:-33px;
+			}
+			.l2 img{
+				margin-top:15px;
+			}
+			.aiqiyi{
+				color:rgb(58,165,3);
+				font-size:14px;
+				display: inline-block;
+				/*border:1px solid gold;*/
+				position: absolute;
+				top:22px;
+			}
+			.l3{
+				width:200px;
+				/*border:1px solid gold;*/
+				margin-left:180px;
+				margin-top:-37px;
+				font-size:15px;
+			}
+			.find{
+				color:rgb(58,165,3);
+				/*border:1px solid red;*/
+				border-radius:20px;
+				padding:5px 15px;
+				background:black;
+			}
+			.play{
+				color:gray;
+				margin-left:25px;
+			}
+			.play:hover{
+				color:white;
+			}
+			.l4{
+				margin-left:420px;
+				width:300px;
+				height:24px;
+				border:1px solid rgb(58,165,3);
+				margin-top:-23px;
+				border-radius:20px;
+				background: black;
+			}
+			.hs{
+				margin-left:10px;
+				line-height:25px;
+			}
+			.l4_r{
+				width:130px;
+				float:right;
+				/*border:1px solid red;*/
+				border-top-right-radius:20px;
+				border-bottom-right-radius:20px;
+				background: rgb(48,129,2);
+				text-align: center;
+			}
+			.l4_r:hover{
+				background:rgb(62,164,3);
+			}
+			.sou{
+				color:white;	
+			}
+			.head_r{
+				width:400px;
+				height:60px;
+				float:right;
+				/*border:1px solid red;*/
+			}
+			.r1{
+				margin-top:20px;
+			}
+			.r1 span{
+				color:white;
+				font-size:15px;
+				margin-left:15px;
+			}
+			.r2{
+				float:right;
+				margin-top: -22px;
+			}
+			.r1 span:hover{
+				color:rgb(58,165,3);
+			}
+			.nav{
+				width:2000px;
+				height:45px;
+				border-top: 1px solid rgb(58,165,3);
+			}
+			.nav span{
+				color:gray;
+				font-size:17px;	
+			}
+			.nav span:hover{
+				color:white;
+			}
+			.nav_l{
+				width:47%;
+				/*border:1px solid red;*/
+				float:left;
+				margin-top:-5px;
+			}
+			.nav_l span{
+				margin-left:22px;
+			}
+			.nav_r span{
+				margin-right:21px;
+			}
+			.nav_r{
+				width:53%;
+				float:right;
+				margin-top:10px;
+				/*border:1px solid red;*/
+			}
+			.VIP{
+				width:85px;
+				height:20px;
+				padding:1px 8px;
+				border-radius:20px;
+				background: black;
+				/*border:1px solid red;*/
+				display: inline-block;
+				margin-left:10px;
+				margin-top:10px;
+			}
+			.con{
+				width:100%;
+				height:780px;
+				margin-top:100px;
+				/*background: black;*/
+				background:rgb(22,22,22);
+			}
+			.con_t{
+				height:60px;
+				/*border:1px solid red;*/
+			}
+			.con_t img{
+				margin-left:35px;
+				margin-top:15px;
+			}
+			.select{
+				width:250px;
+				height:30px;
+				border:1px solid rgb(58,165,3);
+				margin:-37px auto;
+				border-radius:20px;
+			}
+			.tj{
+				width:50%;
+				color:white;
+				background:forestgreen;
+				float:left;
+				text-align: center;
+				padding:7px 0px;
+				border-top-left-radius:20px;
+				border-bottom-left-radius: 20px;
+			}
+			.pk{
+				display: inline-block;
+				width:50%;
+				color:white;
+				float:right;
+				text-align: center;
+				padding:7px 0px;
+			}
+			.con_ban{
+				width:1400px;
+				margin: 0 auto;
+				/*border:1px solid rgb(2,12,19);*/
+				position: relative;
+			}
+			.con_ban img{
+				width:100%;
+				height:100%;
+			}
+			.fu{
+				position: absolute;
+				/*border:1px solid red;*/
+				right:70px;
+				bottom:65px;
+				width:350px;
+				height:300px;
+				background: rgba(0,0,0,0.6);
+			}
+			.login{
+				width:100px;
+				margin:0 auto;
+				border:2px solid rgb(230,191,120);
+				color:rgb(195,147,96);
+				font-size:16px;
+				padding:5px 30px;
+				text-align: center;
+				margin-top:30px;
+				border-radius:5px;
+			}
+			.w{
+				color:white;
+				margin-left:16px;
+				line-height:40px;
+			}
+			.g{
+				color:rgb(68,59,52);
+				margin-left:16px;
+			}
+			.fu2{
+				text-align: center;
+			}
+			.fu3{
+				margin-top:20px;
+			}
+			.fu3 .z{
+				margin-top:20px;
+				color:rgb(233,192,126);
+				margin-left:20px;
+				font-size:17px;
+			}
+			.fu3 .x{
+				width:170px;
+				float:right;
+				border:1px dashed rgb(233,192,126);
+				margin-right:18px;
+				display: inline-block;
+				margin-top:8px;
+			}
+			.fu4 img{
+				width:30px;
+				height:30px;
+			}
+			.fu4{
+				width:270px;
+				height:70px;
+				/*border:1px solid red;*/
+				margin:15px auto;
+			}
+			.fu4_1{
+				width:120px;
+				height:35px;
+				/*border:1px solid red;*/
+				display: inline-block;
+			}
+			.fu4_2,.fu4_3{
+				margin-left:20px;
+			}
+			.fu4_1 .w{
+				margin-top:-35px;
+				margin-left:45px;
+			}
+			.fu5{
+				width:200px;
+				margin:0 auto;
+				text-align: center;
+				background: rgb(222,175,119);
+				border-radius:8px;
+				padding:10px 30px;
+				color:rgb(102,47,16);
+				font-size:18px;
+			}
+			.fu_l{
+				width:270px;
+				height:10px;
+				background: rgba(0,0,0,0.5);
+				position:absolute;
+				top:10px;
+				left:30px;
+				padding:15px 2px;
+			}
+			.fu_l a{
+				color:white;
+				font-size:16px;
+			}
+			.fu_l a:hover{
+				color:rgb(58,165,3);
+			}
+			.con_hot{
+				width:1300px;
+				height:260px;
+				margin:30px auto;
+				/*border:1px solid green;*/
+			}
+			.con_hot .t{
+				color:rgb(58,165,3);
+				font-size:22px;
+			}
+			.con_f{
+				margin-top:10px;
+				height:220px;
+				/*border:1px solid red;*/
+			}
+			.f1 img{
+				width:125px;
+				height:170px;
+			}
+			.f1{
+				width:125px;
+				height:220px;
+				/*border:1px solid yellow;*/
+				/*display: inline-block;*/
+			}
+			.f1 p{
+				font-size:14px;
+				color:white;
+				background: rgb(30,30,30);
+				line-height:20px;
+			}
+			/*.f2,.f3,.f4,.f5,.f6,.f7{
+				margin-left:38px;
+			}*/
+			@media only screen and (max-width:1215px) {
+				.head,.con{
+					width:1215px;
+				}
+			}
+			.hot1,.num1{
+				position: relative;
+				display: inline-block;
+			}
+			.hot2{
+				margin-left:30px;
+			}
+			.fvip{
+				width:30px;
+				background:rgb(58,165,3) ;
+				text-align: center;
+				color:white;
+				position:absolute;
+				top:5px;
+				left:5px;
+			}
+			.fp{
+				width:45px;
+				background:rgba(0,0,0,0.5);
+				color:white;
+				position:absolute;
+				bottom:55px;
+				text-align: center;
+				margin-left:5px;
+			}
+			.xxjs{
+				width:600px;
+				height:200px;
+				background: rgba(0,0,0,0.9);
+				position: absolute;
+				bottom:40px;
+				left:140px;
+				z-index:3;
+				display:none;
+			}
+			.tit{
+				color:rgb(58,165,3);
+				font-size:24px;
+				margin:10px 20px;
+				display: inline-block;
+			}
+			.pj{
+				color:grey;
+				font-size:16px;
+				display: inline-block;
+			}
+			.tr{
+				font-size:20px;
+				color:rgb(157,53,27);
+				float:right;
+				margin-top:10px;
+				margin-right:20px;
+			}
+			.xxjs .x{
+				border-top:1px solid dimgray;
+				width:460px;
+				margin:0 auto;
+			}
+			.intro{
+				width:460px;
+				height:100px;
+				/*border:1px solid red;*/
+				margin:11px auto;
+			}
+			.jj{
+				width:60px;
+				height:90px;
+				float:left;
+				color:gray;
+				display: inline-block;
+				text-align: center;
+				margin-top: 4px;
+			}
+			.jjcn{
+				width:400px;
+				height:100px;
+				float:right;
+				display: inline-block;
+				color:darkgrey;
+				font-size:15px;
+				line-height:25px;
+			}
+			.bot  img{
+				width:30px;
+				height:30px;
+				margin-top:-10px;
+				margin-left:20px;
+			}
+			.lj{
+				color:rgb(58,165,3);
+				font-size:20px;
+				display: inline-block;
+				position:absolute;
+				bottom:10px;
+				margin-left: 10px;
+			}
+			.bot_r{
+				width:420px;
+				padding:5px;
+				float:right;
+				/*border:1px solid red;*/
+				margin-top:-7px;
+			}
+			.bot_r img{
+				width:20px;
+				height:20px;
+				margin-left:40px;
+			}
+			.bot_r span{
+				color:darkgrey;
+				margin-left:5px;
+			}
+			.hot1:hover+.xxjs{
+				display: block;
+			}
+			.top{
+				position:fixed;
+				z-index:6;
+				top:0;
+				left:0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="top">
+		<div class="head">
+			<div class="head_l">
+				<div class="l1">
+					<div class="red"></div>
+					<div class="yellow"></div>
+					<div class="green"></div>
+				</div>
+				<div class="l2">
+					<img src="img/head_1.png"/>
+					<p class="aiqiyi">爱奇艺</p>
+				</div>
+				<div class="l3">
+					<span class="find">找片</span>
+					<span class="play">播放</span>
+					<span class="play">离线</span>
+				</div>
+				<div class="l4">
+					<span class="play hs">河神</span>
+					<div class="l4_r">
+						<img src="img/l4.png" alt="" />
+						<span class="sou">搜全网</span>
+					</div>
+				</div>
+			</div>
+			<div class="head_r">
+				<div class="r1">
+					<span>登录</span>
+					<span>开通VIP</span>
+				</div>
+				<div class="r2">
+					<img src="img/r2.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_l">
+				<span><img src="img/index.png"/>首页</span>
+				<p class="VIP">
+					<img src="img/VIP.png"/>
+				</p>
+				<span>电视剧</span>
+				<span>电影</span>
+				<span>综艺</span>
+				<span>动漫</span>
+				<span>资讯</span>
+				<span>娱乐</span>
+				<span>搞笑</span>
+				<span>脱口秀</span>
+				<span>音乐</span>
+				<span>游戏</span>
+				<span>原创</span>
+			</div>
+			<div class="nav_r">
+				<span>纪录片</span>
+				<span>旅游</span>
+				<span>片花</span>
+				<span>教育</span>
+				<span>时尚</span>
+				<span>少儿</span>
+				<span>微电影</span>
+				<span>体育</span>
+				<span>广告</span>
+				<span>生活</span>
+				<span>财经</span>
+				<span>汽车</span>
+				<span>军事</span>
+				<span>母婴</span>
+				<span>科技</span>
+				<span>健康</span>
+				<span>...</span>
+			</div>
+		</div>
+		</div>
+		<div class="con">
+			<div class="con_t">
+				<img src="img/con_t.png"/>
+				<div class="select">
+					<p class="tj">推荐</p>
+					<p class="pk">片库</p>
+				</div>
+			</div>
+			<div class="con_ban">
+				<img src="img/bg.jpg"/>
+				<div class="fu_l">
+					<a href="">VIP电影&nbsp;&nbsp;|</a>
+					<a href="">&nbsp;&nbsp;VIP电视剧&nbsp;&nbsp;|</a>
+					<a href="">&nbsp;&nbsp;VIP纪录片</a>
+				</div>
+				<div class="fu">
+					<div class="login">立即登录</div>
+					<div class="fu2">
+						<span class="w">用户注册</span>
+						<span class="g">|</span>
+						<span class="w">找回密码</span>
+					</div>
+					<div class="fu3">
+						<span class="z">VIP会员尊享权益</span>
+						<p class="x"></p>
+					</div>
+					<div class="fu4">
+						<div class="fu4_1">
+							<img src="img/1.png" alt=""/>
+							<p class="w">免费片库</p>
+						</div>
+						<div class="fu4_1 fu4_2">
+							<img src="img/2.png" alt=""/>
+							<p class="w">跳过广告</p>
+						</div>
+						<div class="fu4_1">
+							<img src="img/3.png" alt=""/>
+							<p class="w">尊贵身份</p>
+						</div>
+						<div class="fu4_1 fu4_3">
+							<img src="img/4.png" alt=""/>
+							<p class="w">免费点播</p>
+						</div>
+					</div>
+					<div class="fu5">
+						立即开通VIP会员
+					</div>
+				</div>
+			</div>
+			<div class="con_hot">
+				<p class="t">|&nbsp;最近热播</p>
+				<div class="con_f">
+					<div class="num1">
+						<div class="hot1">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>
+						</div>
+						<div class="xxjs">
+							<p class="tit">冈仁波齐</p>
+							<p class="pj">你的评价: <img src="img/pj.png" alt="" /></p>
+							<div class="tr">8.5</div>
+							<div class="x"></div>
+							<div class="intro">
+								<p class="jj">简介:</p>
+								<p class="jjcn">普拉村村民尼玛扎堆在父亲去世后决定要完成父亲的遗愿,带着叔叔去拉萨和神山冈仁波齐朝圣.时正马年,正好是神山冈仁波齐百年一遇的本命年,小村里很多人都希望...</p>
+							</div>
+							<div class="bot">
+								<img src="img/play.png"/>
+								<div class="lj">立即播放</div>
+								<div class="bot_r">
+									<img src="img/g.png" alt="" /><span>看过</span><img src="img/s.png" alt="" /><span>不想看</span><img src="img/x.png" alt="" /><span>离线缓存</span><img src="img/save.png" alt="" /><span>收藏</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+					<div class="num1">
+						<div class="hot1 hot2">
+							<div class="f1">
+								<img src="img/2.jpg" alt="" />
+								<p>冈仁波齐</p>
+								<p>真实记录两千里朝...</p>
+							</div>
+							<div class="fvip">VIP</div>
+							<div class="fp">1080P</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

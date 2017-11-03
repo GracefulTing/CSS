@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+			form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			img{border:0;}
+			ul,li{list-style-type:none;}
+			a{color:#00007F;text-decoration:none;}
+			a:hover{text-decoration:none;}
+			.head{
+				width:100%;
+				height:100px;
+				background:rgba(0,0,0,0.6);
+				position:fixed;
+				top:0;
+				left:0;
+				z-index:5;
+			}
+			.head img{
+				width:216px;
+				margin-top:25px;
+				/*float:left;*/
+			}
+			.head_c{
+				/*width:1600px;*/
+				width:80%;
+				height:100px;
+				margin:0 auto;
+				/*border:1px solid;*/
+			}
+			.head_c a{
+				color:lightgray;
+				font-size:20px;
+				margin-left:50px;
+				float:right;
+				margin-top:40px;
+				transition:all 3s;
+			}
+			.head_c a:hover{
+				border-bottom: 2px solid white;
+				color:white;
+				/*text-decoration: underline;*/
+			}
+			/*.nav{
+				position:relative;
+			}*/
+			.logo33{
+				position: absolute;
+				top:130px;
+				left:150px;
+				width:150px;
+				height:150px;
+				z-index:1;
+			}
+			.con{
+				width:100%;
+				min-width:1250px;
+			}
+			.con img{
+				width:470px;
+				/*margin:5px 0;*/
+			}
+			.home_bg{
+				width:100%;
+				height:100%;
+			}
+			.share{
+				width:24%;
+				border:3px solid white;
+				margin-right:3px;
+				position: relative;
+				display: inline-block;
+			}
+			.share h1{
+				color:white; 
+				position: absolute;
+				bottom:140px;
+				left:40px;
+			}
+			.share a{
+				border:1px solid white;
+				color:white;
+				font-size: 15px;
+				padding:10px;
+				border-radius:20px;
+				position:absolute;
+				bottom:40px;
+				left:40px;
+			}
+			.share a:hover{
+				background: white;
+				color:black;
+			}
+			.footer{
+				height:330px;
+				background:#191919;
+				text-align: center;
+				line-height: 20px;
+				color:#A3A3A3;
+				position: relative;			
+			}
+			.bottom{
+				height:50px;
+				background: lightgray;
+				text-align: center;
+				line-height:50px;
+				color:#a3a3a3;
+			}
+			.fl{
+				margin-top:70px;
+			}
+			.cert{
+				margin-top:20px;
+				width:180px;
+			}
+			.footer p{
+				margin-top:5px;
+			}
+			.si{
+				margin-top:15px;
+				cursor: pointer;
+			}
+			.si:hover~.wx{
+				display: block;
+			}
+			.wx{
+				position: absolute;
+				/*bottom:150px;
+				left:880px;*/
+				bottom:45%;
+				left:46%;
+				display: none;
+			}
+			@media only screen and (max-width:1050px ) 			{
+				.head,.nav,.con,.footer,.bottom{
+					width:1050px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head_c">
+				<img src="img/logo.png" alt="" />
+				<a href="">加入我们</a>
+				<a href="">下载APP</a>
+				<a href="">关于我们</a>
+				<a href="">首页</a>
+			</div>
+		</div>
+		<div class="nav">
+			<img src="img/home_bg.jpg" class="home_bg"/>
+			<img src="img/logo33.png" class="logo33"/>
+		</div>
+		<div class="con">
+			<div class="share">
+				<img src="img/share_img.png" />
+				<h1>ofo大共享</h1>
+				<a href="">查看详情&nbsp;&nbsp;&nbsp;></a>
+			</div>
+			<div class="share">
+				<img src="img/event_img.png" />
+				<h1>ofo大事件</h1>
+				<a href="">查看详情&nbsp;&nbsp;&nbsp;></a>
+			</div>
+			<div class="share">
+				<img src="img/family_img.png" />
+				<h1>ofo大家庭</h1>
+				<a href="">查看详情&nbsp;&nbsp;&nbsp;></a>
+			</div>
+			<div class="share">
+				<img src="img/active_img.jpg" />
+				<h1>ofo热门活动</h1>
+				<a href="">查看详情&nbsp;&nbsp;&nbsp;></a>
+			</div>
+		</div>
+		<div class="footer">
+			<img src="img/footer_logo.png" class="fl"/><br />
+			<img src="img/cert.png" class="cert"/><br />
+			<p>4001 507 507（周一至周日：早7:00 - 次日凌晨1:00）</p>
+			<p>
+				北京市海淀区北四环西路58号理想国际大厦11层
+			</p>
+			<img src="img/social_icon.png" class="si"/>
+			<img src="img/wx-qrcode.jpg" alt="" class="wx"/>
+		</div>
+		<div class="bottom">
+			Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so
+		</div>
+	</body>
+</html>

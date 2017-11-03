@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			.box{
+				width:100px;
+				height:100px;
+				margin:100px;
+				float:left;
+				background: red;
+				/*
+				 * IE6下,解决双边距问题:
+				 * display:inline-block;
+				*/
+				 display:inline-block;
+			}
+			/*IE6下双边距问题:
+			  在IE6下,块元素有浮动,有margin值的时候,横向的margin会扩大两倍.\
+			  解决方法:为该块元素添加display:inline-block;*/
+			 /*float和margin同时存在才会出现,横向.*/
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

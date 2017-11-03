@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				/*width:500px;*/
+				height:500px;
+				font-size:50px;
+				line-height: 500px;
+				text-align: center;
+				background:turquoise;
+				margin:0 auto;
+				background-image: radial-gradient(pink,greenyellow);
+				
+				/*以圆为基础向四周扩散*/
+				background-image: radial-gradient(circle,pink,greenyellow);
+				/*圆的最近端*/
+				background-image: radial-gradient(circle closest-side,red,blue);
+				/*椭圆的最远端*/
+				background-image: radial-gradient(ellipse farthest-side,red,blue);
+				/*圆的最近角*/
+				background-image:radial-gradient(circle closest-corner,red,blue);
+				/*椭圆的最远角*/
+				background-image:radial-gradient(ellipse farthest-corner,red,blue);
+			}
+		</style>
+	</head>
+	<body>
+		<div>字</div>
+	</body>
+</html>
